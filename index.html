@@ -2,28 +2,74 @@
 <style>
 ul {list-style-type: none;
 }
-li {display: inline;
+.navig {text-align: right;
 position: relative;
-left: 90%;}
-a {}
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: flex-end;
+}
+.item{margin-right: 10px;
+color: black;}
+a{ text-decoration: none;
+color: black;}
+.dive{ display: fle;
+}
+img{ width: 375px;}
+
+.main {
+position: relative;
+justify-content:center;
+align-items: center;
+text-align: center;
+padding-top: 200px;
+}
+button{ width: 150px;
+height: 35px;
+border-width: 0px;
+opacity:0.7;}
+button:hover{ background-color:pink;
+opacity: 1;}
+
+.search {
+padding-left: 250px;
+padding-bottom: 6px;    
+border-radius: 20px; 
+margin-bottom: 35px;
+margin-top: 40px;
+border-width: 1.3px;
+border-color: rgb(199, 187, 187);}
+
+.but{background-color: rgb(9, 9, 122);
+color: white;
+width: 100px;
+height: 35px;
+}
 
 </style>
+
 <html>
 <head>
 <nav>
-    <ul>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="#">Images</a></li>
+    <ul class="navig">
+        <li class="item"><a href="#">Gmail</a></li>
+        <li class="item"><a href="#">Images</a></li>
+        <li> <button class="but">Sign in</button></li>
     </ul>
 </nav>
 </head>
+
 <body> 
 
-
+<div class="main" class="dive">
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+<br>
+<input type="search" class="search">
+<br>
+<button>Google search</button> 
+<button>Im feeling lucky</button>
+</div>
 
-<input type="search">
-    
 </body>
 
 <footer>
